@@ -62,4 +62,16 @@ public class Commune {
     public double density() {
         return (this.population / this.superficie);
     }
+
+    public static Commune leastPopulated(Commune [] array) {
+       
+        Commune leastPopulated = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i].density() < leastPopulated.density()) {
+                leastPopulated = array[i];
+            }   
+
+    return leastPopulated;
+
+    }
 }
