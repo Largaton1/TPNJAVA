@@ -38,11 +38,26 @@ public class Commune {
         return this.postalCode;
     }
 
+    public int getPopulation() {
+        return this.population;
+    }
+
     public int getSuperficie() {
         return this.superficie;
     }
 
     public String toString() {
         return "name" + name + "department" + "postalCode" + "superficie";
+    }
+
+    public static Commune morePopulated(Commune commune1, Commune commune2) {
+
+        if (commune1.getPopulation() < commune2.getPopulation()) {
+
+            return commune2;
+        } 
+            return commune1;
+        
+
     }
 }
