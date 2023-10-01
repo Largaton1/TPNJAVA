@@ -22,6 +22,24 @@ public class Commune {
 
     }
 
+    public String getName() {
+        return this.name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getDepartment() {
+        return this.department;
+    }
+
+    public int getPostalCode() {
+        return this.postalCode;
+    }
+
+    public int getSuperficie() {
+        return this.superficie;
+    }
 
 }
