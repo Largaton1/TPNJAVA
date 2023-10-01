@@ -30,6 +30,18 @@ public class ApartmentTest {
         return apartment;
        
    }
+   public static double surfaceMoyenne (Apartment[] tab){
+    double somme = 0;
+    for (int i =0; i<tab.length ; i++) {
+        
+        somme = somme + tab[i].getSurface();
+        
+    }
+    double moyenne=somme/(tab.length);
+    
+    return moyenne;
+    
+}
 
     public static void main(String[] args) {
 
