@@ -42,4 +42,7 @@ public class Commune {
         return this.superficie;
     }
 
+    public String toString() {
+        return "name" + name + "department" + "postalCode" + "superficie";
+    }
 }
