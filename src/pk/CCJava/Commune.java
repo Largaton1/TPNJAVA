@@ -55,9 +55,11 @@ public class Commune {
         if (commune1.getPopulation() < commune2.getPopulation()) {
 
             return commune2;
-        } 
-            return commune1;
-        
+        }
+        return commune1;
+    }
 
+    public double density() {
+        return (this.population / this.superficie);
     }
 }
