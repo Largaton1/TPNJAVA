@@ -17,6 +17,20 @@ public class ApartmentTest {
 		return total;
 	}
 
+    public static Apartment apptSurfaceMax(Apartment[] tab) {
+        double max=0;
+        Apartment apartment = new Apartment ();
+        for (int i=0; i<tab.length ; i++) {
+            if (tab[i].getSurface()>max) {
+                max=tab[i].getSurface();
+                apartment=tab[i];
+                
+            }
+        }
+        return apartment;
+       
+   }
+
     public static void main(String[] args) {
 
     }
