@@ -72,6 +72,19 @@ public class Commune {
             }
 
         }
-          return leastPopulated;
+        return leastPopulated;
+    }
+
+    public static int sameName(Commune[] array, String name) {
+
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].getName().equals(name))
+                ;
+            {
+                count++;
+            }
+        }
+        return count;
     }
 }
